@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Facebook Replica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>    
+    <!--This is the header using the navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a href="/" class=" fw-bold fs-3 text-white text-decoration-none">
+          <i class="bi bi-facebook"></i><span>acebook</span>          
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Pic.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </button>
+        
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control rounded-pill" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-outline-light rounded-pill" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+          <span class="navbar-nav">
+            <div class="dropdown" id="dropdown-icon">
+              <a href="#" class="d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Pic.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Share Profile</a></li>
+                <li><a class="dropdown-item" href="#">Story Archive</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                <li><a class="dropdown-item" href="#">Add Account</a></li>
+              </ul>
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="groups" viewBox="0 0 16 16">
+        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+      </symbol>
+      <symbol id="friends" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </symbol>
+      <symbol id="pages" viewBox="0 0 16 16">
+        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21 21 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21 21 0 0 0 14 7.655V1.222z"/>
+      </symbol>
+      <symbol id="marketplace" viewBox="0 0 16 16">
+        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+      </symbol>
+      <symbol id="feeds" viewBox="0 0 16 16">
+        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+        <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+      </symbol>
+      <symbol id="video" viewBox="0 0 16 16">
+        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+      </symbol>
+      <symbol id="events" viewBox="0 0 16 16">
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+        <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+      </symbol>
+      <symbol id="saved" viewBox="0 0 16 16">
+        <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1z"/>
+      </symbol>
+      <symbol id="birthday" viewBox="0 0 16 16">
+        <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802zM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.9.9 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.9.9 0 0 1 4 6.414zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4zM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
+      </symbol>
+      <symbol id="messanger" viewBox="0 0 16 16">
+        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+      </symbol>
+    </svg>
+    <!--This is the middle part divided into a left side bar, the main and the right sidebar-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--Left Sidebar-->
+        <div class="col-md-3 border">
+          <div class="card align-middle" >
+            <img class="card-img-top" src="images/Imageholder.png" alt="Card image"  style="height:150px; width:80%;">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <a href="#" class="btn btn-primary">Profile</a>
+            </div>
+          </div>
+            
+  
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#friends"/></svg>
+                Friends
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#messanger"/></svg>
+                Messanger
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis" >
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#groups"/></svg>
+                Group
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#pages"/></svg>
+                Pages
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#marketplace"/></svg>
+                Marketplace
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#feeds"/></svg>
+               Feeds
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#video"/></svg>
+                Video
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#events"/></svg>
+                Events
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#saved"/></svg>
+                Saved
+              </a>
+            </li>        
+          </ul>
+          <hr>
+        </div>      
+        <!--Main part-->
+        <main class="col-md-6 border">
+                
+          <div class="image-container mt-3 mx-3">
+              <img src="https://pixabay.com/get/g84d9a6a3e63eb430094b71857606e56e2b5030dcc90a217b752cf441aab1867cb4d15c8481df0281caf0f97a1f3c8cc1319d8a1a4d7f89ea1d518b0a45818de7_640.jpg" class="rounded img-thumbmail mx-auto d-inline mx-1" alt="" style="width: 140px; height: 120px;">
+              <img src="https://pixabay.com/get/gb0856cf14c93bef63623e258247562c7512271bff455a5e26ec08d9932d327c5c5a40d14c3f0ec610215d5d1b2db6e019dfaeb8f6b96dcc3eb0bc90e7a288e8c_640.jpg" class="rounded img-thumbmail mx-auto d-inline mx-1" alt="" style="width: 140px; height: 120px;">
+              <img src="https://pixabay.com/get/g7e87861326481a381b9befa961627db99990b595c8fcc7c4e7dd203c562983dc7a30c6fd4e5e920cc95f152d6933ddb64634f21ccb070a5eb1b8e89fa62b28de_640.jpg" class="rounded img-thumbmail mx-auto d-inline mx-1" alt="" style="width: 140px; height: 120px;">
+              <img src="https://pixabay.com/get/gd9c939a23f83cdb6d37dd928e850cb1b2dc1d691bbbe2c943511f8b4b070f3310beaf0c17441b2ae425036d794417734388821cfdab6173659d0fae7c38d0577_640.jpg" class="rounded img-thumbmail mx-auto d-inline mx-1" alt="" style="width: 140px; height: 120px;">
+          </div>
+        
+
+          <div class="d-flex flex-row mt-3">
+            <img src="images/Imageholder.png" class="rounded-circle mx-3" style="width: 60px;height: 50px;">
+            <input type="text" class="form-control rounded-pill" placeholder="What's on your mind? John Doe" style="width: 85%;">
+          </div>
+          <hr class="mx-4">
+          <div class="d-flex">
+            <span><i class="fa fa-video-camera" aria-hidden="true"></i> Live Video</span>
+            <div id="icon-position">
+            <span><i class="bi bi-images"></i> Photo/Video</span>
+            <span><i class="bi bi-emoji-smile"></i> Feeling/Activity</span>
+            </div>
+          </div>
+          <section class="">
+            <div class="d-flex justify-content-evenly">
+              <img src="images/Imageholder.png" class="rounded my-3 mx-3" style="width: 40px;height: 40px;">
+              <h2 class="my-3">Monday Morning</h2>
+              <div class="ms-auto my-3">
+                <i class="bi bi-three-dots mx-3" style="font-size: 30px;"></i>
+                <i class="bi bi-x-square" style="font-size: 30px;"></i>
+              </div>
+            </div>
+            <div class="container px-5 ">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            </div>
+            <div class="container-image-poster">
+              <img src="https://pixabay.com/get/g809bcc6ab6dd724dbe4c9eb328d7a63a8a39b09171c4d2464f35cc1085d8390e525b921745a6e5816c29b29f36e2a04849172e9f91612f0efba328ee1dbb30c6_640.jpg" class="poster-image mb-3" alt="" >
+            </div>
+          </section>
+        </main>
+        <!--Right Sidebar-->
+        <div class="col-md-3 align-items-stretch flex-shrink-0 border">
+          <h5 class="mt-3 ">Birthday Notifications</h5>
+          <ul class="list-unstyled">
+            <li>
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#birthday"/></svg>
+              Today is John's birthday
+            </li>
+            <li>
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#birthday"/></svg>
+              Today is Becky's birthday
+            </li>
+            <li>
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#birthday"/></svg>
+              Today is Kim's birthday
+            </li>
+            
+          </ul>
+          <hr>
+          <div class="d-flex" >
+            <h4 class="justify-content-between mx-4">Friends</h4>
+            <span class="ml-6"><i class="fa fa-search my-2 mx-2" style="font-size: 18px;" ></i></span>
+            <span class="float-start"><i class="fa fa-filter my-2 mx-2" style="font-size: 18px;"></i></span>
+          </div>
+          <ul class="list-group -none flex-column  small">
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2" >
+                <img src="https://pixabay.com/get/gaa85a090db1cd81537854feb215817b5affa1138cfd0d9645e5fcebc51dbbb1825a705792ed2f1388018c77396bb285ac70d7b8d000417b9fac66510ce5cb1c1_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle ">
+              </a>
+              Vili Zuri Eads
+            </li> 
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/ge29b9d908fdb6011d4ecdf6fd5979acf85d446a4c598394721806391fde4297555d9c9efadd36042b0061b2e39c4618131f790fabff347330894e80024c187a8_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Suzanna Atchison 
+            </li> 
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/g475155c238909b7be75a5629e1ded2d8e0175d6b4f9feb04abda9a155eb06fa424303948c8300d937c7870f66b67a286c88aab2dba09bbdc6a93ee7072b91504_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Claire Paola Cowel 
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/gabd74cfa78401e46d437a867beb2e827a22066bb7d333b6b44968352b9010c107d00fd96c1103297f070d42c534530f0e729c687da1dccc6f6148940d6365710_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Lénárd Van Aals 
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/g74090535a96ed7f995316592ff81748467179dfaa890360df2bc49ff8215f553bd2bc4fa189259524d36a1d881b7d64939c5d9006bf3943c60f041d5c5786f52_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Avidan Puig 
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Pic.png" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Ana Rowe 
+            </li>  
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/g8a364163de49805e4b1be043d5c1dc67c384b20b26de7d3c2efc618e6914a8a790d04081ce12537dc38fdedcde283a64e52ca692af7b9d7f525ae6fc26a69722_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Pryderi Jones 
+            </li> 
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/g96213fa4ec6b40732d1027825e7572df2ae06ba30e5c4c488ac0d26cb8f675757a368e65853c1e50904fa791bbd870f1e014cfa11b8549b5fcbbfafc1e7311b0_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Humbert Jekyll 
+            </li> 
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none ms-1 p-2">
+                <img src="https://pixabay.com/get/g46af40d05b65f030ac396567876844648142e010e67b02cdee38266692bd8dd15a3de27f63bf85f44e34f8b111b88cac60a949dd04e6d6b317a13bc4d3e2d21b_640.jpg" alt="mdo" width="30" height="30" class="rounded-circle">
+              </a>
+              Dorotea Joshi 
+              <!--This line can be used to make an online badge
+                <i class="bi bi-circle-fill text-success d-flex justify-content-end"></i>
+              -->
+            </li> 
+          </ul>     
+
+        </div>
+      </div>    
+    </div>
+
+    <footer class="footer bg-primary py-2" >
+      <div class="container text-white">
+        <div class="row">
+          <p class="text-center">Copyright &copy; 2024 All rights reserved.</p>
+          <div class="col-sm-12 text-center link-light">
+            <a href="#" class="text-white">Privacy</a>
+            <span class="mx-2">·</span>
+            <a href="#" class="text-white">Terms</a>
+            <span class="mx-2">·</span>
+            <a href="#" class="text-white">Advertising</a>
+            <span class="mx-2">·</span>
+            <a href="#" class="text-white">Ad Choices</a>
+            <span class="mx-2">·</span>
+            <a href="#" class="text-white">Cookies</a>
+            <span class="mx-2">·</span>
+            <a href="#" class="text-white">More</a>
+            <span class="mx-2">·</span>
+            <a href="#" class="text-white">Facebook &copy; 2024</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
